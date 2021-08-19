@@ -1,0 +1,11 @@
+- name: project01
+  logo: 01.jpg
+  description: teste001
+  status: active
+
+  
+- name: project02
+  logo: 02.jpg
+  description: teste002
+  status: concluded	
+  
