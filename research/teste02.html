@@ -11,7 +11,7 @@ title: Research Projects |
 	<ul>
 		{% for item in site.data.myProjects %}
 		<li>
-			item.name || item.logo || item.description
+			{{item.name}} || {{item.logo}} || {{item.description}}
         </li>
        {% endfor %}
     </ul>	
