@@ -23,41 +23,23 @@ title: CV |
 		</ul>		
 	</div>
 	<div class="border-bottom">
-		<h3>Education</h3>
-		
+		<h3>Education</h3>			
 		{% for member in site.data.myEducation %}
-			<p>{{member.institution}}</p>
-			<p>teste007</p>
-		{% endfor %}
-		
 		<ul>
-			<li><strong>PhD in Electrical and Computer Engineering</strong>, University of Coimbra</li>
+			<li><strong>{{member.name}}</strong>, {{member.institution}}</li>
 				<div class="media">
-				  <img class="rounded-lg" src="/myFiles/universidade-de-coimbra-logo.png" class="align-self-start mr-3" alt="logo UC university of coimbra" width="100px">
+				  <img class="rounded-lg" src="{{member.logo}}" class="align-self-start mr-3" alt="logo" width="100px">
 				  <div class="media-body">
 					<ul>
-						<li><strong>Time Span:</strong> 2010 - 2017</li>
-						<li><strong>Research Field:</strong> Automation and Robotics; Computational modeling; Artificial Perception</li>
-						<li><strong>Thesis:</strong> <a href="/phd-thesis">Development of techniques for haptic object exploration: a contribution for autonomous robotic hands</a>.</li>
-						<li><strong>Supervisors:</strong> Prof. Jorge Dias (FCTUC) and Prof. Miguel Castelo-Branco (FMUC)</li>
+						<li><strong>Time Span:</strong>{{member.time}}</li>
+						<li><strong>Research Field:</strong> {{member.research}}</li>
+						<li><strong>Outputs:</strong> {{member.outputs}}</li>
+						<li><strong>Supervisors:</strong> {{member.supervisors}}</li>
 					</ul>	
 				  </div>
 				</div>
 		</ul>
-		<ul>
-			<li><strong>MSc in Biomedical Engineering</strong>, University of Coimbra</li>
-				<div class="media">
-				  <img class="rounded-lg" src="/myFiles/fctuc-logo.png" class="align-self-start mr-3" alt="logo FCTUC faculty of science and technology university of coimbra" width="100px">
-				  <div class="media-body">
-					<ul>
-						<li><strong>Time Span:</strong> 2002 - 2008</li>
-						<li><strong>Specialization:</strong> Medical instrumentation; Medical Informatics.</li>
-						<li><strong>Curricular internship:</strong> <a target="_blank" href="https://estudogeral.sib.uc.pt/handle/10316/9935">BW-Eye: Ophthalmologic decision support system based on clinical workflow and data mining techniques</a></li>
-						<li><strong>Company:</strong> Blueworks, Lda.</li>
-					</ul>	
-				  </div>
-				</div>
-		</ul>		
+		{% endfor %}		
 	</div>
 	<div class="border-bottom">		
 		<h3>Awards</h3>
