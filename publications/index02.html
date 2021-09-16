@@ -28,15 +28,9 @@ title: Publications |
 	<div class="border-bottom">
 		<h3>Book Chapters</h3>
 		<ul>	
-		<li>H. C. Pereira, D. Sousa, M. Simões, R. Martins, C. Amaral, V. Lopes, J. Crisóstomo, M. Castelo-Branco - <strong>"Effects of anodal multichannel transcranial direct current stimulation (tDCS) on social-cognitive performance in healthy subjects: A randomized sham-controlled crossover pilot study"</strong> - Progress in Brain Research, 2021. <span style="color:indianred;"><strong>&#10753; full-text </strong></span>[<a target="_blank" href="https://scholar.google.com/scholar?oi=bibs&hl=en&cluster=14914967477686745695"><strong>link</strong></a>]</li>
-		
-		<li> D. R. Faria, R. Martins, J. Lobo, J. Dias - <strong>A Probabilistic Framework to Detect Suitable Grasping Regions on Objects.</strong> In 10th IFAC Symposium on Robot Control (SYROCO 2012), Dubrovnik, Croatia, September, 2012. <span style="color:indianred;"><strong>&#10753; full-text </strong></span>[<a target="_blank" href="https://scholar.google.com/scholar?oi=bibs&hl=en&cluster=4868425535907423058"><strong>link</strong></a>]</li>	
-		
-		<li> Diego Faria, Ricardo Martins, Jorge Lobo, Jorge Dias - <strong>Manipulative Tasks Identification by Learning and Generalizing Hand Motions</strong>. In DoCEIS'11 - 2nd Doctoral Conference on Computing, Electrical and Industrial Systems. Costa da Caparica - Portugal, February, 2011. <span style="color:indianred;"><strong>&#10753; full-text </strong></span>[<a target="_blank" href="https://scholar.google.com/scholar?oi=bibs&hl=en&cluster=2577749601894643125"><strong>link</strong></a>]</li>
-
-		<li> Diego R. Faria, Ricardo Martins, Jorge Dias - <strong>Grasp Exploration for 3D Object Shape Representation using Probabilistic Map </strong> - In Proceedings of the DoCEIS'10 - Doctoral Conference on Computing, Electrical and Industrial Systems. Lisbon, February, 2010. <span style="color:indianred;"><strong>&#10753; full-text </strong></span>[<a target="_blank" href="https://scholar.google.com/scholar?oi=bibs&hl=en&cluster=13158768667464790435"><strong>link</strong></a>]</li>	
-
-		<li> António Dourado, Ricardo Martins, João Duarte, Bruno Direito - <strong>Towards Personalized Neural Networks for Epileptic Seizure Prediction</strong>, in Proc. of the ICANN 2008, pp. 479-487, Vol. 5164, Lecture Notes on Computer Science, International Conference on Neural Networks ICANN 2008, Prague, Czek Republic, September 2008. <span style="color:indianred;"><strong>&#10753; full-text </strong></span>[<a target="_blank" href="https://scholar.google.com/scholar?oi=bibs&hl=en&cluster=3645746795932067540"><strong>link</strong></a>]</li>		
+		{% for member in site.data.myPublicationsJournal %}	
+			<li> {{member.authors}} - <strong>"{{member.title}}"</strong> - {{member.publication}}, {{member.year}}. <span style="color:indianred;"><strong>&#10753; full-text </strong></span>[<a target="_blank" href="https://{{member.link}}"><strong>link</strong></a>]</li>
+		{% endfor %}	
 		</ul>
 		<p><br></p>
 	</div>
