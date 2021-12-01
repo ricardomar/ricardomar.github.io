@@ -49,6 +49,15 @@ title: Publications |
 	</div>
 	
 
+	<div class="border-bottom">
+		<h3>Conference Posters</h3>
+		<ul>		
+		{% for member in site.data.myPublicationsConferencePoster %}	
+			<li> {{member.authors}} - <strong>"{{member.title}}"</strong> - {{member.publication}}, {{member.year}}. <span style="color:indianred;"><strong>&#10753; full-text </strong></span>[<a target="_blank" href="https://{{member.link}}"><strong>link</strong></a>]</li>
+		{% endfor %}		
+		</ul>
+		<p><br></p>
+	</div>
 
 
 	<div class="border-bottom">	
