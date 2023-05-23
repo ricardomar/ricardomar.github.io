@@ -4,48 +4,58 @@ description: Research projects, Neuroscience, Engineering, Ricardo Martins, CIBI
 title: Research Projects |
 ---
 <div>
-	<div>
-		<h2>Ongoing Research Projects</h2>
-	</div>
-	<div class="border-bottom">
-		{% for member in site.data.myResearchOngoing %}
-		<ul>
-			<li><strong>{{member.name}}</strong></li>
-				<div class="media">
-				  <img class="rounded-lg" src="{{member.logo}}" class="align-self-start mr-3" alt="logo" width="100px">
-				  <div class="media-body">
-					<ul>
-						<li><strong>Research Field: </strong> {{member.research}}</li>
-						<li><strong>Time Span: </strong> {{member.time}}</li>
-						<li><strong>Role: </strong> {{member.role}}</li>
-						<li><strong>More info: </strong> [<a target="_blank" href="https://{{member.info}}">website</a>]</li>
-					</ul>	
-				  </div>
-				</div>
-		</ul>
-		{% endfor %}		
-	</div>	
-	<div>
-		<h2>Past projects</h2>
-	</div>
-	<div class="border-bottom">	
-		{% for member in site.data.myResearchConcluded %}
-		<ul>
-			<li><strong>{{member.name}}</strong></li>
-				<div class="media">
-				  <img class="rounded-lg" src="{{member.logo}}" class="align-self-start mr-3" alt="logo" width="100px">
-				  <div class="media-body">
-					<ul>
-						<li><strong>Research Field: </strong> {{member.research}}</li>
-						<li><strong>Time Span: </strong> {{member.time}}</li>
-						<li><strong>Role: </strong> {{member.role}}</li>
-						<li><strong>More info: </strong> [<a target="_blank" href="https://{{member.info}}">website</a>]</li>
-					</ul>	
-				  </div>
-				</div>
-		</ul>
-		{% endfor %}
-	</div>		
+
+  <div class="container mt-4 border-bottom">
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Ongoing Research Projects</h2>
+        <ul class="list-group">
+		  {% for member in site.data.myResearchOngoing %}
+          <li class="list-group-item d-md-flex flex-md-row flex-column" style="border: none;">
+            <div class="col-md-2">
+              <img src="{{member.logo}}" alt="logo" class="img-fluid" align="center" width="100px">
+            </div>
+            <div class="col-md-10">
+              <p><strong>{{member.name}}</strong></p>
+              <ul>
+					<li><strong>Research Field: </strong> {{member.research}}</li>
+					<li><strong>Time Span: </strong> {{member.time}}</li>
+					<li><strong>Role: </strong> {{member.role}}</li>
+					<li><strong>More info: </strong> [<a target="_blank" href="https://{{member.info}}">website</a>]</li>
+              </ul>
+            </div>
+          </li>
+		  {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container mt-4 border-bottom">
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Past projects</h2>
+        <ul class="list-group">
+		  {% for member in site.data.myResearchConcluded %}
+          <li class="list-group-item d-md-flex flex-md-row flex-column" style="border: none;">
+            <div class="col-md-2">
+              <img src="{{member.logo}}" alt="logo" class="img-fluid" align="center" width="100px">
+            </div>
+            <div class="col-md-10">
+              <p><strong>{{member.name}}</strong></p>
+              <ul>
+					<li><strong>Research Field: </strong> {{member.research}}</li>
+					<li><strong>Time Span: </strong> {{member.time}}</li>
+					<li><strong>Role: </strong> {{member.role}}</li>
+					<li><strong>More info: </strong> [<a target="_blank" href="https://{{member.info}}">website</a>]</li>
+              </ul>
+            </div>
+          </li>
+		  {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
 </div>
 <div>
 <!--Exemplo https://developers.google.com/search/docs/data-types/breadcrumb#json-ld -->

@@ -4,60 +4,78 @@ description: Curriculum Vitae, Ricardo Martins, CIBIT, ICNAS, UC, University of 
 title: CV |
 ---
 <div>
-	<div>
-		<h2>Curriculum Vitae</h2>
-	</div>
-	<div class="border-bottom">		
-		<ul>
-			<li><strong>Ricardo Martins</strong></li>
-				<div class="media">
-				  <img class="rounded-lg" src="/myFiles/photo-ricardo-martins-02.jpg" class="align-self-start mr-3" alt="photography of Ricardo Martins" width="100px">
-				  <div class="media-body">
-					<ul>
-						<li><strong>Position: </strong>Postdoctoral Resercher @ <a href="https://scholar.google.com/citations?user=9yXxShAAAAAJ">Miguel Castelo-Branco</a> group (<a href="/contacts">CIBIT-UC</a>, <a href="/contacts">ICNAS-UC</a>).</li>					
-						<li><strong>Full CV: </strong>Available online at CienciaVitae Platform <a target="_blank" href="https://www.cienciavitae.pt/en/7F17-8F87-7BB8">(web version)</a> or  <a target="_blank" href="/cv-pdf">(pdf version)</a>.</li>
-						<li><strong>More info: </strong> [<a href="/research">Research Topics</a>] [<a href="/publications">Publications</a>] [<a target="_blank" href="https://publons.com/researcher/1701872/ricardo-martins/peer-review/">Reviewer Service</a>] [<a href="#awards">Awards</a>] [<a href="/contacts">Social & Author Profiles</a>]</li>
-					</ul>	
-				  </div>
-				</div>
-		</ul>		
-	</div>
-	<div class="border-bottom">
-		<h3>Education</h3>			
-		{% for member in site.data.myEducation %}
-		<ul>
-			<li><strong>{{member.name}}</strong>, {{member.institution}}</li>
-				<div class="media">
-				  <img class="rounded-lg" src="{{member.logo}}" class="align-self-start mr-3" alt="logo" width="100px">
-				  <div class="media-body">
-					<ul>
-						<li><strong>Time Span:</strong> {{member.time}}</li>
-						<li><strong>Research Field:</strong> {{member.research}}</li>
-						<li><strong>Outputs:</strong> {{member.outputs}}</li>
-						<li><strong>Supervisors:</strong> {{member.supervisors}}</li>
-					</ul>	
-				  </div>
-				</div>
-		</ul>
-		{% endfor %}		
-	</div>
-	<div class="border-bottom">		
-		<h3>Awards</h3>
-		<p><a href="#" name="awards"></a></p>
-		{% for member in site.data.myAwards %}
-		<ul>
-			<li><strong>{{member.name}}</strong></li>
-				<div class="media">
-				  <img class="rounded-lg" src="{{member.logo}}" class="align-self-start mr-3" alt="logo" width="100px">
-				  <div class="media-body">
-					<ul>
-						<li><strong>Description:</strong> {{member.description}}</li>
-					</ul>	
-				  </div>
-				</div>
-		</ul>
-		{% endfor %}
-	</div>	
+
+  <div class="container mt-4 border-bottom">
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Curriculum Vitae</h2>
+        <ul class="list-group">
+          <li class="list-group-item d-md-flex flex-md-row flex-column" style="border: none;">
+            <div class="col-md-2">
+              <img src="/myFiles/photo-ricardo-martins-02.jpg" alt="ricardo martins photo" class="img-fluid" align="center" width="100px">
+            </div>
+            <div class="col-md-10">
+              <ul>
+					<li><strong>Position: </strong>Postdoctoral Resercher @ <a href="https://scholar.google.com/citations?user=9yXxShAAAAAJ">Miguel Castelo-Branco</a> group (<a href="/contacts">CIBIT-UC</a>, <a href="/contacts">ICNAS-UC</a>).</li>					
+					<li><strong>Full CV: </strong>Available online at CienciaVitae Platform <a target="_blank" href="https://www.cienciavitae.pt/en/7F17-8F87-7BB8">(web version)</a> or  <a target="_blank" href="/cv-pdf">(pdf version)</a>.</li>
+					<li><strong>More info: </strong> [<a href="/research">Research Topics</a>] [<a href="/publications">Publications</a>] [<a target="_blank" href="https://publons.com/researcher/1701872/ricardo-martins/peer-review/">Reviewer Service</a>] [<a href="#awards">Awards</a>] [<a href="/contacts">Social & Author Profiles</a>]</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+		
+  <div class="container mt-4 border-bottom">
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Education</h2>
+        <ul class="list-group">
+		  {% for member in site.data.myEducation %}
+          <li class="list-group-item d-md-flex flex-md-row flex-column" style="border: none;">
+            <div class="col-md-2">
+              <img src="{{member.logo}}" alt="logo" class="img-fluid" align="center" width="100px">
+            </div>
+            <div class="col-md-10">
+              <p><strong>{{member.name}}</strong>, {{member.institution}}</p>
+              <ul>
+					<li><strong>Time Span:</strong> {{member.time}}</li>
+					<li><strong>Research Field:</strong> {{member.research}}</li>
+					<li><strong>Outputs:</strong> {{member.outputs}}</li>
+					<li><strong>Supervisors:</strong> {{member.supervisors}}</li>
+              </ul>
+            </div>
+          </li>
+		  {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>	
+
+  <div class="container mt-4 border-bottom">
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Awards</h2>
+        <ul class="list-group">
+		  {% for member in site.data.myAwards %}
+          <li class="list-group-item d-md-flex flex-md-row flex-column" style="border: none;">
+            <div class="col-md-2">
+              <img src="{{member.logo}}" alt="logo" class="img-fluid" align="center" width="100px">
+            </div>
+            <div class="col-md-10">
+              <p><strong>{{member.name}}</strong></p>
+              <ul>
+					<li><strong>Description:</strong> {{member.description}}</li>
+              </ul>
+            </div>
+          </li>
+		  {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>		
+  
 </div>
 <div>
 <!--Exemplo https://developers.google.com/search/docs/data-types/breadcrumb#json-ld -->
