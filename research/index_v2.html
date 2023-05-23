@@ -25,11 +25,13 @@ title: Research Projects |
 		</ul>
 		{% endfor %}		
 	</div>
+	
   <div class="container mt-4 border-bottom">
     <div class="row">
       <div class="col-md-12">
         <h2>Ongoing Research Projects</h2>
         <ul class="list-group">
+		{% for member in site.data.myResearchOngoing %}
           <li class="list-group-item d-flex" style="border: none;">
             <div class="col-md-2">
               <img src="{{member.logo}}" alt="logo" width="100px" class="img-fluid">
@@ -45,6 +47,7 @@ title: Research Projects |
               </ul>
             </div>
           </li>
+		  {% endfor %}
         </ul>
       </div>
     </div>
