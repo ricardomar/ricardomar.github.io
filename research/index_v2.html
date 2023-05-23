@@ -33,15 +33,15 @@ title: Research Projects |
   
   <div class="container mt-4 border-bottom">
     <div class="row">
-      <div class="col-md-10">
+      <div class="col-md-12">
         <h2>Past projects</h2>
         <ul class="list-group">
 		  {% for member in site.data.myResearchConcluded %}
           <li class="list-group-item d-flex" style="border: none;">
-            <div class="col-md-1">
+            <div class="col-md-2">
               <img src="{{member.logo}}" alt="logo" class="img-fluid">
             </div>
-            <div class="col-md-9">
+            <div class="col-md-10">
               <h5>{{member.name}}</h5>
               <ul>
 					<li><strong>Research Field: </strong> {{member.research}}</li>
