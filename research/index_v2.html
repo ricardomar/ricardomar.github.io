@@ -1,0 +1,93 @@
+---
+layout: default
+description: Research projects, Neuroscience, Engineering, Ricardo Martins, CIBIT, ICNAS, UC, University of Coimbra
+title: Research Projects |
+---
+<div>
+	<div>
+		<h2>Ongoing Research Projects</h2>
+	</div>
+	<div class="border-bottom">
+		{% for member in site.data.myResearchOngoing %}
+		<ul>
+			<li><strong>{{member.name}}</strong></li>
+				<div class="media">
+				  <img class="rounded-lg" src="{{member.logo}}" class="align-self-start mr-3" alt="logo" width="100px">
+				  <div class="media-body">
+					<ul>
+						<li><strong>Research Field: </strong> {{member.research}}</li>
+						<li><strong>Time Span: </strong> {{member.time}}</li>
+						<li><strong>Role: </strong> {{member.role}}</li>
+						<li><strong>More info: </strong> [<a target="_blank" href="https://{{member.info}}">website</a>]</li>
+					</ul>	
+				  </div>
+				</div>
+		</ul>
+		{% endfor %}		
+	</div>
+  <div class="container mt-4 border-bottom">
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Ongoing Research Projects</h2>
+        <ul class="list-group">
+          <li class="list-group-item d-flex" style="border: none;">
+            <div class="col-md-2">
+              <img src="{{member.logo}}" alt="logo" width="100px" class="img-fluid">
+            </div>
+            <div class="col-md-10">
+              <h5>{{member.name}}</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id erat sit amet elit pulvinar interdum. Suspendisse potenti.</p>
+              <ul>
+					<li><strong>Research Field: </strong> {{member.research}}</li>
+					<li><strong>Time Span: </strong> {{member.time}}</li>
+					<li><strong>Role: </strong> {{member.role}}</li>
+					<li><strong>More info: </strong> [<a target="_blank" href="https://{{member.info}}">website</a>]</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+	
+	<div>
+		<h2>Past projects</h2>
+	</div>
+	<div class="border-bottom">	
+		{% for member in site.data.myResearchConcluded %}
+		<ul>
+			<li><strong>{{member.name}}</strong></li>
+				<div class="media">
+				  <img class="rounded-lg" src="{{member.logo}}" class="align-self-start mr-3" alt="logo" width="100px">
+				  <div class="media-body">
+					<ul>
+						<li><strong>Research Field: </strong> {{member.research}}</li>
+						<li><strong>Time Span: </strong> {{member.time}}</li>
+						<li><strong>Role: </strong> {{member.role}}</li>
+						<li><strong>More info: </strong> [<a target="_blank" href="https://{{member.info}}">website</a>]</li>
+					</ul>	
+				  </div>
+				</div>
+		</ul>
+		{% endfor %}
+	</div>		
+</div>
+<div>
+<!--Exemplo https://developers.google.com/search/docs/data-types/breadcrumb#json-ld -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Ricardo Martins",
+        "item": "https://rmartins.net"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Research Projects"
+      }]
+    }
+    </script>
+</div>
