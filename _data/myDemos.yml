@@ -13,7 +13,7 @@
   website: github.com/rmartins-net/Colour-picker-and-data-extractor-from-colour-bar--colour-map-and-heatmap-plots
   logo: /myFiles/demo-colour-picker.png
   
-- name: Localizer: MT+, MST, MT proper
+- name: Localizer - MT+, MST, MT proper
   about: 2014, ICNAS-UC, MATLAB, Psychophysics toolbox
   website: github.com/rmartins-net/Localizer-MT-MST-MT-proper-Psychophysics-Toolbox
   logo: /myFiles/MT-localizer.png
@@ -23,12 +23,12 @@
   website: github.com/rmartins-net/human-demonstration-dexterous-manipulation-lab-pipette/blob/master/README.md
   logo: /myFiles/demo-pipette.png
 
-- name: DRC and Gazebo ROS packages: initial tests
+- name: DRC and Gazebo ROS packages - initial tests
   about: 2013, ISR-UC, C++, ROS
   website: github.com/rmartins-net/drc-gazebo-ros-packages-initial-tests/blob/master/README.md
   logo: /myFiles/demo-ros-gazebo.png
 
-- name: Instrumented Rubik cube: touch data visualization tool
+- name: Instrumented Rubik cube - touch data visualization tool
   about: 2013, ISR-UC, C++, OpenGL, CAN bus
   website: github.com/rmartins-net/Instrumented-Rubik-cube-touch-data-visualization-tool
   logo: /myFiles/demo-instrumented-rubik-cube.png
@@ -53,7 +53,7 @@
   website: github.com/rmartins-net/Reconstruction-of-octrees-from-3D-point-cloud
   logo: /myFiles/demo-octrees.png
 
-- name: Human body and hand: kinematic structure analysis in a 3D environment
+- name: Human body and hand - kinematic structure analysis in a 3D environment
   about: 2009, ISR-UC, Python, Vizard
   website: github.com/rmartins-net/Human-body-and-hand-kinematic-structure-analysis-in-a-3D-environment
   logo: /myFiles/demo-3d-avatar-kinematics.png
