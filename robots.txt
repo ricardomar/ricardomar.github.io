@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://rmartins.net/sitemap.xml
+Sitemap: https://ricardomar.github.io/sitemap.xml
