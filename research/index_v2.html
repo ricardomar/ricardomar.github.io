@@ -12,10 +12,10 @@ title: Research Projects |
         <ul class="list-group">
 		  {% for member in site.data.myResearchOngoing %}
           <li class="list-group-item d-flex" style="border: none;">
-            <div class="col-md-2">
+            <div class="col-md-2 order-md-2">
               <img src="{{member.logo}}" alt="logo" class="img-fluid">
             </div>
-            <div class="col-md-10" >
+            <div class="col-md-10 order-md-1" >
               <h5><strong>{{member.name}}</strong></h5>
               <ul>
 					<li><strong>Research Field: </strong> {{member.research}}</li>
@@ -55,7 +55,7 @@ title: Research Projects |
         </ul>
       </div>
     </div>
-  </div>  
+  </div>
 </div>
 <div>
 <!--Exemplo https://developers.google.com/search/docs/data-types/breadcrumb#json-ld -->
