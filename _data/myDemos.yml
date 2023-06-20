@@ -1,3 +1,8 @@
+- name: iNaturalist - Portugal (biodiversity4all)
+  about: 2016, citizen science, photography, sound
+  website: www.inaturalist.org/observations?place_id=any&user_id=ricardomartins112
+  logo: /myFiles/iNaturalist-data.png
+
 - name: Moving plaids with dots - bistable plaids
   about: 2018, ICNAS-UC, MATLAB, Psychophysics toolbox
   website: github.com/rmartins-net/moving-plaid-with-dots
