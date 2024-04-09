@@ -1,12 +1,12 @@
 title: Nagymaros
 description: Jekyll theme for a conference website
 baseurl: ""
-url: https://piazzai.github.io/jekyll-nagymaros
+url: https://ricardomar.github.io/demo
 
 theme: jekyll-nagymaros
 
 copyright: Place Holder
-indexing: true
+indexing: false
 
 permalink: pretty
 
