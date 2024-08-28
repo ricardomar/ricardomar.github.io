@@ -4,4 +4,6 @@ title: Welcome
 description: "Ricardo Martins, postdoctoral researcher, CIBIT, ICNAS, UC, University of Coimbra"
 ---
 
-index
+<p>My name is <strong>Ricardo Martins</strong>, and I hold a PhD in <strong>Electrical and Computer Engineering</strong> with a specialization in automation and robotics, complemented by an MSc in <strong>Biomedical Engineering</strong>.</p>
+<p>Over the course of my research career at institutions like the <strong>University of Coimbra (UC)</strong>, the <strong>Institute of Systems and Robotics (ISR-UC)</strong>, the <strong>Coimbra Institute for Biomedical Imaging and Translational Research (CIBIT-UC)</strong>, and the <strong>Institute of Nuclear Sciences Applied to Health (ICNAS-UC)</strong>, my work has primarily focused on two key areas: artificial perception in robotics and neuroimaging in cognitive neuroscience. These fields intersect through the use of <strong>statistical analysis</strong>, <strong>multivariate signal processing</strong>, and <strong>computational modeling</strong>.</p>
+<p>On this website, you can explore my <a href="/cv">curriculum vitae</a>, browse my latest <a href="/publications">publications</a>, delve into my main <a href="/research">research topics</a>, discover <a href="/demos">projects and demos</a>, and find <a href="/contacts">contact information</a>.</p>
