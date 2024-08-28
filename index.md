@@ -3,12 +3,10 @@ layout: page
 title: Welcome
 description: "Ricardo Martins, postdoctoral researcher, CIBIT, ICNAS, UC, University of Coimbra"
 ---
-
 <div class="row align-items-center">
 	<div class="col-md-6">
 		<!-- Image goes here -->
-		<img src="/myFiles/computer-logo.png" class="img-fluid" alt="Image">
-		</br>
+		<img src="/assets/images/computer-logo.png" class="img-fluid" alt="Image">
 	</div>
 	<div class="col-md-6">
 		<p>My name is <strong>Ricardo Martins</strong>, and I hold a PhD in <strong>Electrical and Computer Engineering</strong> with a specialization in automation and robotics, complemented by an MSc in <strong>Biomedical Engineering</strong>.</p>
