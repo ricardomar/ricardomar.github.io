@@ -9,7 +9,7 @@ indexing: true
 
 permalink: pretty
 
-language_id: pt-PT
+language_id: en
 
 exclude:
   - LICENSE
