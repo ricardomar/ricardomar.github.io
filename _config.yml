@@ -5,11 +5,7 @@ url: https://ricardomar.github.io
 
 theme: jekyll-nagymaros
 
-indexing: true
-
 permalink: pretty
-
-language_id: en
 
 exclude:
   - LICENSE

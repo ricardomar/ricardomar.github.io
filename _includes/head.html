@@ -1,21 +1,28 @@
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {% if site.indexing and page.layout != 404 %}
-	<meta name="robots" content="follow, index" />
-	<meta name="author" content="CIBIT-ICNAS">
-	<meta name="description" content="{{ page.description }}">
-	<meta name="geo.region" content="PT" />
-	<meta name="geo.placename" content="Coimbra" />
-    {% else %}
-    <meta name="robots" content="none">
-	{% endif %}
-    
-	{% if page.title %}
-    <title>{{ site.title | prepend: ' | ' | prepend: page.title }}</title>
-    {% else %}
-    <title>{{ site.title | append: ' | ' | append: site.description }}</title>
-    {% endif %}
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-9FHB9GXE81"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-9FHB9GXE81');
+	</script>
+	
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="description" content="{{ page.description }}">
+    <meta name="author" content="Ricardo Martins">
+    <meta name="robots" content="follow, index" />
+    <link rel="icon" href="/myFiles/icon.png">
+    <meta property="og:image" content="/myFiles/computer-logo.png" />
+	<meta name="thumbnail" content="/myFiles/computer-logo.png" />
+	<link rel="canonical" href="https://{{ page.canonical }}" />
+
+
+    <title>{{ page.title }} | Ricardo Martins | CIBIT ICNAS | UC - University of Coimbra</title>	
+	
     
 	<link rel="stylesheet" href="{{ '/assets/css/bootstrap.css' | prepend: site.url }}">
     <link rel="stylesheet" href="{{ '/assets/css/leaflet.css' | prepend: site.url }}">
