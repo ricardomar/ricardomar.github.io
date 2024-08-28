@@ -1,1 +1,0 @@
-Website desenvolvido tendo como ponto de partida o template https://github.com/piazzai/jekyll-nagymaros ao qual foram adicionadas vários ajustes/optimizações.
