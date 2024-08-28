@@ -9,7 +9,7 @@ permalink: /research/
 <h2>Ongoing Research Projects</h2>
 <ul class="list-group">
   {% for member in site.data.myResearchOngoing %}
-  <li class="list-group-item d-md-flex flex-md-row flex-column" style="border: none;">
+  <li>
 	<div class="col-md-2">
 	  <img src="{{member.logo}}" alt="logo" class="img-fluid"  width="100">
 	</div>
