@@ -7,8 +7,7 @@ permalink: /research/
 ---
 
 <h3>Ongoing Research Projects</h3>
-
-  {% for member in site.data.myResearchOngoing %}
+{% for member in site.data.myResearchOngoing %}
 	<div class="row align-items-center">
 		<div class="col-md-4">
 			<!-- Image goes here -->
@@ -20,7 +19,6 @@ permalink: /research/
 			<p><strong>Time Span: </strong> {{member.time}}</p>
 			<p><strong>Role: </strong> {{member.role}}</p>
 			<p><strong>More info: </strong> [<a target="_blank" href="https://{{member.info}}">website</a>]</p>
-			<p></p>
 		</div> 
 	</div>	
-  {% endfor %}
+{% endfor %}
