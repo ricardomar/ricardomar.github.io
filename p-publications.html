@@ -7,14 +7,14 @@ permalink: /publications/
 ---
 {% for member in site.data.myPublicationsJournal %}	
 <div class="row">
-<div class="col-md-1 mb-4">
+<div class="col-md-1">
 	<h5 class="fw-normal m-0 mb-2">{{member.year}}</h5>
 </div>
-<div class="col-md-11 border-start border-3 border-gray-4 mb-4">
-	<p class="fw-normal m-0 mb-2"><span class="text-muted">{{member.year}} | {{member.publication}}</span></p>
-	<p class="fw-bold m-0 mb-2">{{member.title}}</p>
-	<p class="fst-italic m-0 mb-2">{{member.authors}}</p>
-	<p class="fw-normal m-0 mb-2"><a href="https://doi.org/{{member.doi}}">{{member.doi}}</a> | <a href="https://doi.org/{{member.doi}}">full-text</a></p>
+<div class="col-md-11 border-start border-5 border-gray-4">
+	<p class="fw-normal m-0 mb-1"><span class="text-muted">{{member.year}} | {{member.publication}}</span></p>
+	<p class="fw-bold m-0 mb-1">{{member.title}}</p>
+	<p class="fst-italic m-0 mb-1">{{member.authors}}</p>
+	<p class="fw-normal m-0 mb-1"><a href="https://doi.org/{{member.doi}}">{{member.doi}}</a> | <a href="https://doi.org/{{member.doi}}">full-text</a></p>
 </div>
 </div>
 {% endfor %}
