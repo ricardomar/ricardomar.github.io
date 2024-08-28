@@ -6,7 +6,7 @@ navorder: 2
 permalink: /research/
 ---
 
-<h2>Ongoing Research Projects</h2>
+<h3>Ongoing Research Projects</h3>
 <ul class="list-group">
   {% for member in site.data.myResearchOngoing %}
   <li>
