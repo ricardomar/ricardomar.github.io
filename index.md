@@ -3,6 +3,7 @@ layout: page
 title: Welcome
 description: "Ricardo Martins, postdoctoral researcher, CIBIT, ICNAS, UC, University of Coimbra"
 ---
+<h2>Welcome!</h2>
 <div class="row align-items-center">
 	<div class="col-md-4">
 		<!-- Image goes here -->
