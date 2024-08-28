@@ -5,7 +5,59 @@ description: "Publications, open-access, full-text, Ricardo Martins, CIBIT, ICNA
 navorder: 3
 permalink: /publications/
 ---
+<h3>Journal Papers</h3>
 {% for member in site.data.myPublicationsJournal %}	
+<div class="row">
+<div class="col-md-12 border-start border-5 border-gray-4 mb-3">
+	<p class="fw-normal m-0 mb-1"><span class="text-muted">{{member.year}} | {{member.publication}}</span></p>
+	<p class="fw-bold m-0 mb-1">{{member.title}}</p>
+	<p class="fst-italic m-0 mb-1">{{member.authors}}</p>
+	<p class="fw-normal m-0 mb-1"><a href="https://doi.org/{{member.doi}}">{{member.doi}}</a> | <a href="https://doi.org/{{member.doi}}">full-text</a></p>
+</div>
+</div>
+{% endfor %}
+
+
+<h3>Book Chapters</h3>
+{% for member in site.data.myPublicationsBookChapter %}	
+<div class="row">
+<div class="col-md-12 border-start border-5 border-gray-4 mb-3">
+	<p class="fw-normal m-0 mb-1"><span class="text-muted">{{member.year}} | {{member.publication}}</span></p>
+	<p class="fw-bold m-0 mb-1">{{member.title}}</p>
+	<p class="fst-italic m-0 mb-1">{{member.authors}}</p>
+	<p class="fw-normal m-0 mb-1"><a href="https://doi.org/{{member.doi}}">{{member.doi}}</a> | <a href="https://doi.org/{{member.doi}}">full-text</a></p>
+</div>
+</div>
+{% endfor %}
+
+
+<h3>Conference Papers</h3>
+{% for member in site.data.myPublicationsConferencePaper %}	
+<div class="row">
+<div class="col-md-12 border-start border-5 border-gray-4 mb-3">
+	<p class="fw-normal m-0 mb-1"><span class="text-muted">{{member.year}} | {{member.publication}}</span></p>
+	<p class="fw-bold m-0 mb-1">{{member.title}}</p>
+	<p class="fst-italic m-0 mb-1">{{member.authors}}</p>
+	<p class="fw-normal m-0 mb-1"><a href="https://doi.org/{{member.doi}}">{{member.doi}}</a> | <a href="https://doi.org/{{member.doi}}">full-text</a></p>
+</div>
+</div>
+{% endfor %}
+
+
+<h3>Conference Posters</h3>
+{% for member in site.data.myPublicationsConferencePoster %}	
+<div class="row">
+<div class="col-md-12 border-start border-5 border-gray-4 mb-3">
+	<p class="fw-normal m-0 mb-1"><span class="text-muted">{{member.year}} | {{member.publication}}</span></p>
+	<p class="fw-bold m-0 mb-1">{{member.title}}</p>
+	<p class="fst-italic m-0 mb-1">{{member.authors}}</p>
+	<p class="fw-normal m-0 mb-1"><a href="https://doi.org/{{member.doi}}">{{member.doi}}</a> | <a href="https://doi.org/{{member.doi}}">full-text</a></p>
+</div>
+</div>
+{% endfor %}
+
+<h3>Thesis and Dissertations</h3>
+{% for member in site.data.myPublicationsThesis %}	
 <div class="row">
 <div class="col-md-12 border-start border-5 border-gray-4 mb-3">
 	<p class="fw-normal m-0 mb-1"><span class="text-muted">{{member.year}} | {{member.publication}}</span></p>
