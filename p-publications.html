@@ -6,6 +6,7 @@ navorder: 3
 permalink: /publications/
 ---
 <ul class="list-unstyled lh-sm">
+	{% for member in site.data.myPublicationsJournal %}	
 	<li class="d-flex flex-column flex-lg-row ms-2">
 		<div class="row col-lg-2 me-lg-4 text-lg-end mb-2">
 			<p class="text-muted">2019–2020</p>
@@ -15,4 +16,5 @@ permalink: /publications/
 			<p class="fw-normal m-0 mb-2"><a target="_blank" href="{{ speaker.url }}">speaker.name</a>speaker.suffix</p>
 		</div>
 	</li>
+	{% endfor %}
 </ul>

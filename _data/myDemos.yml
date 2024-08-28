@@ -1,0 +1,104 @@
+- name: iNaturalist - Portugal (biodiversity4all)
+  about: 2016-now, citizen science (mapping, identifying, and sharing observations of biodiversity)
+  website: www.inaturalist.org/observations?place_id=any&user_id=ricardomartins112
+  logo: /myFiles/iNaturalist-data.png
+
+- name: Moving plaids with dots - bistable plaids
+  about: 2018, ICNAS-UC, MATLAB, Psychophysics toolbox
+  website: github.com/ricardomar/moving-plaid-with-dots
+  logo: /myFiles/moving-plaids-dots-bistable-plaids-psychophysics-toolbox.png
+  
+- name: Ambiguous and unambiguous plaid motion stimuli
+  about: 2018, ICNAS-UC MATLAB, Psychophysics toolbox
+  website: github.com/ricardomar/Ambiguous-and-unambiguous-plaid-motion-stimuli-Psychophysics-Toolbox
+  logo: /myFiles/ambiguous_plaid_sample_frame.png
+  
+- name: Colour picker and data extractor from colour bar, colour map and heatmap plots
+  about: 2016, ICNAS-UC, MATLAB
+  website: github.com/ricardomar/Colour-picker-and-data-extractor-from-colour-bar--colour-map-and-heatmap-plots
+  logo: /myFiles/demo-colour-picker.png
+  
+- name: Localizer - MT+, MST, MT proper
+  about: 2014, ICNAS-UC, MATLAB, Psychophysics toolbox
+  website: github.com/ricardomar/Localizer-MT-MST-MT-proper-Psychophysics-Toolbox
+  logo: /myFiles/MT-localizer.png
+
+- name: Human demonstration - dexterous manipulation of a lab pipette
+  about: 2013, ISR-UC, MATLAB
+  website: github.com/ricardomar/human-demonstration-dexterous-manipulation-lab-pipette/blob/master/README.md
+  logo: /myFiles/demo-pipette.png
+
+- name: DRC and Gazebo ROS packages - initial tests
+  about: 2013, ISR-UC, C++, ROS
+  website: github.com/ricardomar/drc-gazebo-ros-packages-initial-tests/blob/master/README.md
+  logo: /myFiles/demo-ros-gazebo.png
+
+- name: Instrumented Rubik cube - touch data visualization tool
+  about: 2013, ISR-UC, C++, OpenGL, CAN bus
+  website: github.com/ricardomar/Instrumented-Rubik-cube-touch-data-visualization-tool
+  logo: /myFiles/demo-instrumented-rubik-cube.png
+
+- name: Mapping between different kinematic structures without absolute positioning during operation
+  about: 2012, ISR-UC
+  website: github.com/ricardomar/mapping-between-different-kinematic-structures
+  logo: /myFiles/demo-kinematic-structures.png
+
+- name: Action gist based automatic segmentation for periodic in-hand manipulation movement learning
+  about: 2012, ISR-UC
+  website: github.com/ricardomar/action-gist-automatic-segmentation
+  logo: /myFiles/demo-action-gist.png
+
+- name: Eye tracking demonstration in manipulation tasks
+  about: 2010, ISR-UC
+  website: github.com/ricardomar/eye-tracking-demonstration-in-manipulation-tasks/blob/master/README.md
+  logo: /myFiles/demo-eye-tracking-manipulation.png
+
+- name: Reconstruction of octrees from 3D point cloud
+  about: 2010, ISR-UC, C++, OpenGL
+  website: github.com/ricardomar/Reconstruction-of-octrees-from-3D-point-cloud
+  logo: /myFiles/demo-octrees.png
+
+- name: Human body and hand - kinematic structure analysis in a 3D environment
+  about: 2009, ISR-UC, Python, Vizard
+  website: github.com/ricardomar/Human-body-and-hand-kinematic-structure-analysis-in-a-3D-environment
+  logo: /myFiles/demo-3d-avatar-kinematics.png
+
+- name: Polhemus Liberty hand movement tracking
+  about: 2009, ISR-UC
+  website: github.com/ricardomar/polhemus-liberty-hand-movement-tracking
+  logo: /myFiles/demo-polhemus-rubik-cube.png
+
+- name: MATLAB importDatasetTB toolbox
+  about: 2009, ISR-UC, MATLAB, Java
+  website: github.com/ricardomar/MATLAB-importDatasetTB-toolbox
+  logo: /myFiles/handle-experimental-setup.png
+
+- name: Towards Personalized Neural Networks for Epileptic Seizure Prediction
+  about: 2008, MSc-UC, MATLAB
+  website: github.com/ricardomar/Towards-Personalized-Neural-Networks-for-Epileptic-Seizure-Prediction
+  logo: /myFiles/epileptic-seizure-rediction.png
+
+- name: (Medical equipment - Computer) communication - MECIF protocol
+  about: 2008, MSc-UC, Java
+  website: github.com/ricardomar/Medical-equipment---Computer-communication---MECIF-protocol
+  logo: /myFiles/demo-mecif.png
+
+- name: OCR optical character recognition using neural networks
+  about: 2008, MSc-UC, MATLAB
+  website: github.com/ricardomar/OCR-optical-character-recognition-using-neural-networks
+  logo: /myFiles/demo-ocr.png
+
+- name: Determination of heart rate from ECG data
+  about: 2008, MSc-UC, Java
+  website: github.com/ricardomar/Determination-of-heart-rate-from-ECG-data
+  logo: /myFiles/demo-heart-rate.png
+
+- name: DICOM data extraction and display
+  about: 2008, MSc-UC, Java
+  website: github.com/ricardomar/DICOM-data-extraction-and-display
+  logo: /myFiles/demo-dicom.png
+
+- name: HL7 Health Level 7 message parser
+  about: 2008, MSc-UC, MATLAB
+  website: github.com/ricardomar/HL7-Health-Level-7-message-parser
+  logo: /myFiles/demo-hl7.png
