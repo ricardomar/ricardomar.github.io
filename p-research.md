@@ -9,19 +9,17 @@ permalink: /research/
 <h3>Ongoing Research Projects</h3>
 <ul class="list-group">
   {% for member in site.data.myResearchOngoing %}
-  <li>
-	<div class="col-md-2">
-	  <img src="{{member.logo}}" alt="logo" class="img-fluid"  width="100">
+	<div class="col-md-4">
+		<!-- Image goes here -->
+		<img src="/assets/images/computer-logo.png" class="img-fluid" alt="Image">
 	</div>
-	<div class="col-md-10">
-	  <p><strong>{{member.name}}</strong></p>
-	  <ul>
-			<li><strong>Research Field: </strong> {{member.research}}</li>
-			<li><strong>Time Span: </strong> {{member.time}}</li>
-			<li><strong>Role: </strong> {{member.role}}</li>
-			<li><strong>More info: </strong> [<a target="_blank" href="https://{{member.info}}">website</a>]</li>
-	  </ul>
-	</div>
-  </li>
+	<div class="col-md-8">
+		<p><strong>{{member.name}}</strong></p>
+		<p><strong>Research Field: </strong> {{member.research}}</p>
+		<p><strong>Time Span: </strong> {{member.time}}</p>
+		<p><strong>Role: </strong> {{member.role}}</p>
+		<p><strong>More info: </strong> [<a target="_blank" href="https://{{member.info}}">website</a>]</p>
+		<p></p>
+	</div>  
   {% endfor %}
 </ul>
