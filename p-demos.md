@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Demos
-description: "Escola de Verão CIBIT ICNAS, Universidade de Coimbra."
+description: "Open-data, open-source, demos, Ricardo Martins, CIBIT, ICNAS, UC, University of Coimbra"
 navorder: 4
 permalink: /demos/
 ---

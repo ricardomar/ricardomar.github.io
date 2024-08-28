@@ -1,9 +1,7 @@
 ---
 layout: page
 title: Publications
-description: "Escola de Verão CIBIT ICNAS, Universidade de Coimbra."
-description01: "Uma viagem ao cérebro em 5 dias!"
-description02: "15 a 19 de Julho de 2024 | Universidade de Coimbra"
+description: "Publications, open-access, full-text, Ricardo Martins, CIBIT, ICNAS, UC, University of Coimbra"
 navorder: 3
 permalink: /publications/
 ---
