@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
-    
-    {% include head.html %}
+<html lang="{{ site.language_id }}">
 
-	<body>
-		<div class="container">
-            {% include header.html %}			
-            {{ content }}
-            {% include footer.html %}
-		</div>	
-	</body>
+{% include head.html %}
+
+<body>
+    {{ content }}
+    <script src="{{ '/assets/js/bootstrap.js' | prepend: site.url }}"></script>
+    <script src="{{ '/assets/js/leaflet.js' | prepend: site.url }}"></script>
+    <script src="{{ '/assets/js/main.js' | prepend: site.url }}"></script>
+</body>
+
 </html>

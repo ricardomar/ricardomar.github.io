@@ -1,0 +1,17 @@
+seguir o exemplo para colocar a correr com a versão de jekkyls mais recente
+https://jekyllrb.com/docs/continuous-integration/github-actions/
+
+meter isso a correr ok.
+
+e depois meter no nosso gem file real que são as dependências da versão 2.0 deste template.
+https://rubygems.org/gems/jekyll-nagymaros
+
+
+source 'https://rubygems.org'
+gem 'jekyll-nagymaros', '~> 2.0'
+jekyll ~> 4.3, >= 4.3.3
+jekyll-seo-tag ~> 2.8
+jekyll-sitemap ~> 1.4
+
+
+

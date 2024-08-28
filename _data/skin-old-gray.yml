@@ -1,0 +1,33 @@
+# instrucoes obtidas em https://github.com/piazzai/jekyll-nagymaros/
+#For convenience, the customization of the theme's color scheme is also possible via YAML: 
+#In this case, create a file called skin.yml in your _data folder and assign new colors from the Open Color library https://yeun.github.io/open-color using the (color)-(number) convention. 
+a:
+  color: blue-7         # links
+  hover: blue-9         # links when hovering
+body:
+  bg: gray-0            # background
+  color: gray-8         # body text
+btn-primary:
+  bg: blue-5            # primary button
+  color: gray-0         # primary button text
+  hover: blue-7         # primary button when hovering
+  disabled: blue-3      # disabled primary button
+btn-secondary:
+  bg: gray-5            # secondary button
+  color: gray-0         # secondary button text
+  hover: gray-6         # secondary button when hovering
+digit:
+  bg: gray-3            # background of digit on 404 page
+header:
+  bg: gray-4            # background of navigation bar
+index:
+  bg: gray-2            # background of index container
+navbar-brand:
+  color: gray-8         # website name in header
+  hover: gray-9         # website name in header when hovering
+nav-link:
+  color: gray-7         # navigation links in header
+  hover: gray-9         # navigation links in header when hovering
+text-muted:
+  color: gray-6         # light text
+  hover: gray-9         # light text when hovering (if link)
