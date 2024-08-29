@@ -54,7 +54,7 @@ permalink: /contacts/
 				<div class="col-md-12 border-start border-5 border-gray-4 mb-3">
 					<p class="fw-bold m-0 mb-1">{{member.name}}</p>
 					<p class="fst-italic m-0 mb-1">{{member.place}}</p>
-					<p class="fw-normal m-0 mb-1">[<a href="{{member.link}}">website</a>]</p>
+					<p class="fw-normal m-0 mb-1">[<a target="_blank" href="{{member.website}}">website</a>]</p>
 				</div>
 				</div>
 				{% endfor %}					
@@ -67,7 +67,7 @@ permalink: /contacts/
 				<div id="roster">
 				<ul class="list-unstyled">
 				{% for member in site.data.myContactsDigital %}	
-					<li><a href="{{member.website}}">{{member.name}}</a></li>
+					<li><a target="_blank" href="{{member.website}}">{{member.name}}</a></li>
 				{% endfor %}
 				</ul>
 				</div>
