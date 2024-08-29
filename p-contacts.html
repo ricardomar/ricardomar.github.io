@@ -64,16 +64,14 @@ permalink: /contacts/
 
 				<!-- adicionei esta linha para exibir o topico/titulo do dia que acrescentei na estrutura de dados do programa -->
 				<h3 class="fw-bold d-flex flex-column flex-lg-row mb-4">Digital Identifiers</h3>
+				<div id="roster">
+				<ul class="list-unstyled">
 				{% for member in site.data.myPublicationsJournal %}	
-				<div class="row ms-4">
-				<div class="col-md-12 border-start border-5 border-gray-4 mb-3">
-					<p class="fw-normal m-0 mb-1"><span class="text-muted">{{member.year}} | {{member.publication}}</span></p>
-					<p class="fw-bold m-0 mb-1">{{member.title}}</p>
-					<p class="fst-italic m-0 mb-1">{{member.authors}}</p>
-					<p class="fw-normal m-0 mb-1">[<a href="https://doi.org/{{member.doi}}">{{member.doi}}</a>] [<a href="{{member.link}}">full-text</a>]</p>
+					<li><a href="{{member.website}}">{{member.name}}</a></li>
+				{% endfor %}
+				</ul>
 				</div>
-				</div>
-				{% endfor %}					
+
 			</div>
 			
 		</div>
