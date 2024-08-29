@@ -6,87 +6,80 @@ navorder: 5
 permalink: /contacts/
 ---
 
-        <h5 class="fw-normal">Participants</h5>
-        
-        
-        <div id="roster">
-            <ul class="list-unstyled">
-                
-                
-                
-                
-                <li class="fw-light">Pygoscelis Adeliae</li>
-                
-                
-                
-                
-                <li class="fw-light"><a href="mailto:chinstrap@pengu.in">Pygoscelis Antarcticus</a></li>
-                
-                
-                
-                
-                <li class="fw-light"><a href="mailto:yellow-eyed@pengu.in">Megadyptes Antipodes</a></li>
-                
-                
-                
-                
-                <li class="fw-light"><a href="mailto:southern-rockhopper@pengu.in">Eudyptes Chrysocome</a></li>
-                
-                
-                
-                
-                <li class="fw-light">Eudyptes Chrysolophus</li>
-                
-                
-                
-                
-                <li class="fw-light"><a href="mailto:african@pengu.in">Spheniscus Demersus</a></li>
-                
-                
-                
-                
-                <li class="fw-light"><a href="mailto:humboldt@pengu.in">Spheniscus Humboldti</a></li>
-                
-                
-                
-                
-                <li class="fw-light"><a href="mailto:magellanic@pengu.in">Spheniscus Magellanicus</a></li>
-                
-                
-                
-                
-                <li class="fw-light">Spheniscus Mendiculus</li>
-                
-                
-                
-                
-                <li class="fw-light"><a href="mailto:little@pengu.in">Eudyptula Minor</a></li>
-                
-                
-                
-                
-                <li class="fw-light"><a href="mailto:northern-rockhopperi@pengu.in">Eudyptes Moseleyi</a></li>
-                
-                
-                
-                
-                <li class="fw-light"><a href="mailto:fiordland@pengu.in">Eudyptes Pachyrhynchus</a></li>
-                
-                
-                
-                
-                <li class="fw-light"><a href="mailto:snares@pengu.in">Eudyptes Robustus</a></li>
-                
-                
-                
-                
-                <li class="fw-light"><a href="mailto:royal@pengu.in">Eudyptes Schlegeli</a></li>
-                
-                
-                
-                
-                <li class="fw-light">Eudyptes Sclateri</li>
-                
-                
-            </ul>
-        </div>
+<div class="row">
+	
+	<div class="col-lg-2">
+
+		<div class="d-block d-lg-none text-center mb-3">
+			<div class="btn btn-group p-0 flex-wrap aos-init aos-animate" role="tablist" data-aos="fade-up"> <!-- adicionei flex-wrap para os botões colapsarem em ecrãs pequenos -->
+	
+
+				<button type="button" class="btn btn-secondary rounded-0 active" data-bs-toggle="tab" data-bs-target="#day-1" role="tab" aria-controls="day-1" aria-selected="true">
+					<span class="fs-6">Research Institutions</span> <!-- mudei fs-5 por fs-6 para o tamanho de texto ficar mais pequeno -->
+				</button>
+				
+				<button type="button" class="btn btn-secondary rounded-0" data-bs-toggle="tab" data-bs-target="#day-2" role="tab" aria-controls="day-2" aria-selected="false" tabindex="-1">
+					<span class="fs-6">Digital Identifiers</span> <!-- mudei fs-5 por fs-6 para o tamanho de texto ficar mais pequeno -->
+				</button>
+				
+			</div>
+		</div>
+		
+		
+		<div class="d-none d-lg-block">
+			<div class="btn btn-group-vertical p-0 flex-wrap aos-init aos-animate" role="tablist" data-aos="fade-up"> <!-- adicionei flex-wrap para os botões colapsarem em ecrãs pequenos -->
+				
+				<button type="button" class="btn btn-secondary rounded-0 active" data-bs-toggle="tab" data-bs-target="#day-1" role="tab" aria-controls="day-1" aria-selected="true">
+					<span class="fs-6">Research Institutions</span> <!-- mudei fs-5 por fs-6 para o tamanho de texto ficar mais pequeno -->
+				</button>
+				
+				<button type="button" class="btn btn-secondary rounded-0" data-bs-toggle="tab" data-bs-target="#day-2" role="tab" aria-controls="day-2" aria-selected="false" tabindex="-1">
+					<span class="fs-6">Digital Identifiers</span> <!-- mudei fs-5 por fs-6 para o tamanho de texto ficar mais pequeno -->
+				</button>			
+				
+			</div>
+		</div>		
+	</div>
+	
+	
+	<div class="col-lg-10">
+				
+		<div class="tab-content aos-init aos-animate" data-aos="fade-up">
+			<div class="tab-pane fade active show" id="day-1" role="tabpanel" aria-labelledby="day-1-tab">
+
+				<!-- adicionei esta linha para exibir o topico/titulo do dia que acrescentei na estrutura de dados do programa -->
+				<h3 class="fw-bold d-flex flex-column flex-lg-row mb-4">Research Institutions</h3>
+				{% for member in site.data.myContactsInstitution %}	
+				<div class="row ms-4">
+				<div class="col-md-12 border-start border-5 border-gray-4 mb-3">
+					<p class="fw-bold m-0 mb-1">{{member.name}}</p>
+					<p class="fst-italic m-0 mb-1">{{member.place}}</p>
+					<p class="fw-normal m-0 mb-1">[<a href="{{member.link}}">website</a>]</p>
+				</div>
+				</div>
+				{% endfor %}					
+			</div>
+			
+			<div class="tab-pane fade active show" id="day-1" role="tabpanel" aria-labelledby="day-1-tab">
+
+				<!-- adicionei esta linha para exibir o topico/titulo do dia que acrescentei na estrutura de dados do programa -->
+				<h3 class="fw-bold d-flex flex-column flex-lg-row mb-4">Digital Identifiers</h3>
+				{% for member in site.data.myPublicationsJournal %}	
+				<div class="row ms-4">
+				<div class="col-md-12 border-start border-5 border-gray-4 mb-3">
+					<p class="fw-normal m-0 mb-1"><span class="text-muted">{{member.year}} | {{member.publication}}</span></p>
+					<p class="fw-bold m-0 mb-1">{{member.title}}</p>
+					<p class="fst-italic m-0 mb-1">{{member.authors}}</p>
+					<p class="fw-normal m-0 mb-1">[<a href="https://doi.org/{{member.doi}}">{{member.doi}}</a>] [<a href="{{member.link}}">full-text</a>]</p>
+				</div>
+				</div>
+				{% endfor %}					
+			</div>
+			
+		</div>
+	</div>
+</div>	
+			
+			
+			
+	
