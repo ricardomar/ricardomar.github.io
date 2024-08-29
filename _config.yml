@@ -3,6 +3,8 @@ description: Universidade de Coimbra
 baseurl: ""
 url: https://ricardomar.github.io
 
+# ver a questão de url e base url aqui explicada  https://mademistakes.com/mastering-jekyll/site-url-baseurl/
+
 theme: jekyll-nagymaros
 
 permalink: pretty
