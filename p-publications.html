@@ -72,44 +72,12 @@ permalink: /publications/
 				</div>
 				</div>
 				{% endfor %}					
-			</div>
-			
-			<div class="tab-pane fade" id="day-2" role="tabpanel" aria-labelledby="day-2-tab">
-
-				<!-- adicionei esta linha para exibir o topico/titulo do dia que acrescentei na estrutura de dados do programa -->
-				<h3 class="fw-bold d-flex flex-column flex-lg-row mb-4">Book Chapters</h3>
-				{% for member in site.data.myPublicationsBookChapter %}	
-				<div class="row ms-4">
-				<div class="col-md-12 border-start border-5 border-gray-4 mb-3">
-					<p class="fw-normal m-0 mb-1"><span class="text-muted">{{member.year}} | {{member.publication}}</span></p>
-					<p class="fw-bold m-0 mb-1">{{member.title}}</p>
-					<p class="fst-italic m-0 mb-1">{{member.authors}}</p>
-					<p class="fw-normal m-0 mb-1">[<a target="_blank"  href="https://doi.org/{{member.doi}}">{{member.doi}}</a>] [<a target="_blank"  href="{{member.link}}">full-text</a>]</p>
-				</div>
-				</div>
-				{% endfor %}				
-			</div>
-			
-			<div class="tab-pane fade" id="day-3" role="tabpanel" aria-labelledby="day-3-tab">
-
-				<!-- adicionei esta linha para exibir o topico/titulo do dia que acrescentei na estrutura de dados do programa -->
-				<h3 class="fw-bold d-flex flex-column flex-lg-row mb-4">Conference Papers</h3>
-				{% for member in site.data.myPublicationsConferencePaper %}	
-				<div class="row ms-4">
-				<div class="col-md-12 border-start border-5 border-gray-4 mb-3">
-					<p class="fw-normal m-0 mb-1"><span class="text-muted">{{member.year}} | {{member.publication}}</span></p>
-					<p class="fw-bold m-0 mb-1">{{member.title}}</p>
-					<p class="fst-italic m-0 mb-1">{{member.authors}}</p>
-					<p class="fw-normal m-0 mb-1">[<a target="_blank"  href="https://doi.org/{{member.doi}}">{{member.doi}}</a>] [<a target="_blank"  href="{{member.link}}">full-text</a>]</p>
-				</div>
-				</div>
-				{% endfor %}				
-			</div>		
+			</div>					
 
 			<div class="tab-pane fade" id="pub-2" role="tabpanel" aria-labelledby="pub-2-tab">
 
 				<!-- adicionei esta linha para exibir o topico/titulo do dia que acrescentei na estrutura de dados do programa -->
-				<h3 class="fw-bold d-flex flex-column flex-lg-row mb-4">Conference Abstracts</h3>
+				<h3 class="fw-bold d-flex flex-column flex-lg-row mb-4">Conference (Abstracts/Poster, Papers)</h3>
 				{% for member in site.data.myPublicationsConferencePoster %}	
 				<div class="row ms-4">
 				<div class="col-md-12 border-start border-5 border-gray-4 mb-3">
