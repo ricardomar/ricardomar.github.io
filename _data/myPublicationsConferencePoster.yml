@@ -201,6 +201,13 @@
   doi:
   link:
 
+- title: Touch attention Bayesian models for robotic active haptic exploration of heterogeneous surfaces
+  authors: R. Martins, J. F. Ferreira, J. Dias 
+  publication: IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2014)
+  year: 2014
+  doi: 10.1109/IROS.2014.6942711
+  link: "https://scholar.google.com/scholar?oi=bibs&hl=en&cluster=16350680388179805240"
+
 - title: Perceptual motion integration correlates with long range neural synchrony - a study on the temporal binding hypothesis
   authors: G.N. Costa, J. V. Duarte, M.Intaite, R. Martins, M. Castelo-Branco
   publication: IV IBILI meeting, Coimbra, Portugal
@@ -208,10 +215,89 @@
   doi:
   link:
 
-
 - title: Touch attention Bayesian models for robotic active haptic exploration
   authors: Ricardo Martins, J. F. Ferreira, J. Dias
   publication: 2nd Workshop on Recognition and Action for Scene Understanding (REACTS) 2013, York, UK
   year: August 30, 2013
   doi:
   link:
+  
+- title: A Probabilistic Framework to Detect Suitable Grasping Regions on Objects
+  authors: D. R. Faria, R. Martins, J. Lobo, J. Dias
+  publication: IFAC Proceedings Volumes (10th IFAC Symposium on Robot Control)
+  year: 2012
+  doi: 10.3182/20120905-3-HR-2030.00090
+  link: "https://scholar.google.com/scholar?oi=bibs&hl=en&cluster=4868425535907423058"  
+
+- title: Representation framework of perceived object softness characteristics for active robotic hand exploration
+  authors: Ricardo Martins, Diego R. Faria, Jorge Dias
+  publication: ACM/IEEE International Conference on Human Robot Interaction (HRI2012)
+  year: 2012
+  doi: 10.5281/zenodo.4553427
+  link: "https://scholar.google.com/scholar?oi=bibs&hl=en&cluster=12581873135420910384"
+
+- title: Touch attention Bayesian models for object feature extraction in robotic blind manipulation
+  authors: R. Martins, J. F. Ferreira, J. Dias
+  publication: International Workshop on Bayesian Inference and Maximum Entropy Methods in Science and Engineering (MaxEnt 2012)
+  year: 2012
+  doi: 
+  link: 
+  
+
+- title: Manipulative Tasks Identification by Learning and Generalizing Hand Motions
+  authors: Diego Faria, Ricardo Martins, Jorge Lobo, Jorge Dias
+  publication: IFIP Advances in Information and Communication Technology (DoCEIS 2011)
+  year: 2011
+  doi: 10.1007/978-3-642-19170-1_19
+  link: "https://scholar.google.com/scholar?oi=bibs&hl=en&cluster=2577749601894643125"
+
+- title: Grasp Exploration for 3D Object Shape Representation using Probabilistic Map
+  authors: Diego R. Faria, Ricardo Martins, Jorge Dias
+  publication: IFIP Advances in Information and Communication Technology (DoCEIS 2010)
+  year: 2010
+  doi: 10.1007/978-3-642-11628-5_23
+  link: "https://scholar.google.com/scholar?oi=bibs&hl=en&cluster=13158768667464790435"
+  
+- title: Probabilistic Representation of 3D Object Shape by In-Hand Exploration
+  authors: Diego R. Faria, Ricardo Martins, Jorge Lobo, Jorg
+  publication:  IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2010)
+  year: 2010
+  doi: 10.1109/IROS.2010.5649286
+  link: "https://scholar.google.com/scholar?oi=bibs&hl=en&cluster=2643948512676677537"  
+  
+- title: Symbolic Level Generalization of In-hand Manipulation Tasks from Human Demonstrations using Tactile Data Information
+  authors: Ricardo Martins, Diego R. Faria, Jorge Dias
+  publication: IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2010 - Workshop on Grasping Planning and Task Learning by Imitation)
+  year: 2010
+  doi: 10.5281/zenodo.4553413
+  link: "https://scholar.google.com/scholar?oi=bibs&hl=en&cluster=11166221415431672195"
+
+- title: Learning Motion Patterns from Multiple Observations along the Actions Phases of Manipulative Tasks
+  authors: Diego R. Faria, Ricardo Martins, Jorge Dia
+  publication: IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2010 - Workshop on Grasping Planning and Task Learning by Imitation)
+  year: 2010
+  doi: 10.5281/zenodo.4553421
+  link: "https://scholar.google.com/scholar?oi=bibs&hl=en&cluster=9068704667445455364"
+
+- title: Human reach-to-grasp generalization strategies - a Bayesian approach
+  authors: Diego R. Faria, Ricardo Martins, Jorge Dias
+  publication: Robotics Science and Systems (RSS 2009, Workshop Understanding the Human Hand for Advancing Robotic Manipulation)
+  year: 2009
+  doi: 10.5281/zenodo.4553390
+  link: "https://scholar.google.com/scholar?oi=bibs&hl=en&cluster=17115404288092400564"  
+
+- title:  Towards Personalized Neural Networks for Epileptic Seizure Prediction
+  authors: António Dourado, Ricardo Martins, João Duarte, Bruno Direito
+  publication: Lecture Notes in Computer Science (ICANN 2008)
+  year: 2008
+  doi: 10.1007/978-3-540-87559-8_50
+  link: "https://scholar.google.com/scholar?oi=bibs&hl=en&cluster=3645746795932067540"
+  
+- title: Computational Intelligence Algorithms for Seizure Prediction
+  authors: Bruno Direito, Ricardo Martins, Rui Costa, António Dourado, Francisco Sales, Marco Vieira 
+  publication: Epilepsia (8th European Congress on Epileptology)
+  year: 2008
+  doi: 
+  link: "https://scholar.google.com/scholar?oi=bibs&hl=en&cluster=4567004831818626684"
+  
+  
