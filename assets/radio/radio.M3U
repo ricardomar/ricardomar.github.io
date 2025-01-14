@@ -1,0 +1,69 @@
+#EXTM3U
+#EXTINF:-1, TomorrowLand Radio
+https://playerservices.streamtheworld.com/api/livestream-redirect/OWR_INTERNATIONAL.mp3
+
+#EXTINF:-1, TomorrowLand Radio Anthems
+https://playerservices.streamtheworld.com/api/livestream-redirect/OWR_DAB.mp3
+
+#EXTINF:-1, TomorrowLand Radio day Break
+https://playerservices.streamtheworld.com/api/livestream-redirect/OWR_DAYBREAK.mp3
+
+#EXTINF:-1, Ibiza Global
+https://listenssl.ibizaglobalradio.com:8024/stream
+
+#EXTINF:-1, Ibiza Global - classics
+https://control.streaming-pro.com:8000/ibizaglobalclassics.mp3
+
+#EXTINF:-1, Pure Ibiza Radio
+https://pureibizaradio.streaming-pro.com:8028/stream.mp3
+
+#EXTINF:-1, Antena 1
+http://radiocast.rtp.pt/antena180a.mp3
+
+#EXTINF:-1, Antena 2
+http://radiocast.rtp.pt/antena280a.mp3
+
+#EXTINF:-1, Antena 3
+http://radiocast.rtp.pt/antena380a.mp3
+
+#EXTINF:-1, Antena 2 Jazz In
+http://radiocast.rtp.pt/antena2jazzin80a.mp3
+
+#EXTINF:-1, TSF
+https://tsfdirecto.tsf.pt/tsfdirecto.mp3
+
+#EXTINF:-1, RFM
+https://playerservices.streamtheworld.com/api/livestream-redirect/RFMAAC.aac
+
+#EXTINF:-1, RFM Jazz
+https://playerservices.streamtheworld.com/api/livestream-redirect/RFM_JAZZYAAC.aac
+
+#EXTINF:-1, RFM Rock
+https://playerservices.streamtheworld.com/api/livestream-redirect/RFMONTHEROCKAAC.aac
+
+#EXTINF:-1, RFM Oceano Pacífico
+https://playerservices.streamtheworld.com/api/livestream-redirect/OCEANPACIFICAAC.aac
+
+#EXTINF:-1, Jazz
+http://statslive.infomaniak.ch/playlist/tsfjazz/tsfjazz-high.mp3/playlist.asx
+
+#EXTINF:-1, Kexp rock
+http://live-aacplus-64.kexp.org/kexp64.aac
+
+#EXTINF:-1, Kcrw Eclectic24
+https://streams.kcrw.com/e24_mp3?aw_0_1st.playerid=KCRW_Website
+
+#EXTINF:-1, Wqxr Q2 music classical
+https://q2stream.wqxr.org/q2
+
+#EXTINF:-1, France Musique La Contemporaineo
+http://icecast.radiofrance.fr/francemusiquelacontemporaine-midfi.mp3
+
+#EXTINF:-1, Wqxr classical
+http://www.wqxr.org/stream/wqxr/windows.asx
+
+#EXTINF:-1, Wqxr The Jonathan Channel american songbook
+http://www.wqxr.org/stream/jonathan-channel/windows.asx
+
+#EXTINF:-1, Current Radio
+http://current.stream.publicradio.org/kcmp.mp3
