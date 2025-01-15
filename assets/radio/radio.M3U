@@ -11,7 +11,7 @@ https://playerservices.streamtheworld.com/api/livestream-redirect/OWR_DAYBREAK.m
 #EXTINF:-1, Ibiza Global
 https://listenssl.ibizaglobalradio.com:8024/stream
 
-#EXTINF:-1, Ibiza Global - classics
+#EXTINF:-1, Ibiza Global classics
 https://control.streaming-pro.com:8000/ibizaglobalclassics.mp3
 
 #EXTINF:-1, Pure Ibiza Radio
@@ -44,7 +44,7 @@ https://playerservices.streamtheworld.com/api/livestream-redirect/RFMONTHEROCKAA
 #EXTINF:-1, RFM Oceano Pacífico
 https://playerservices.streamtheworld.com/api/livestream-redirect/OCEANPACIFICAAC.aac
 
-#EXTINF:-1, Jazz
+#EXTINF:-1, TSF Jazz Suica
 http://statslive.infomaniak.ch/playlist/tsfjazz/tsfjazz-high.mp3/playlist.asx
 
 #EXTINF:-1, Kexp rock
