@@ -1,5 +1,5 @@
 #Version of PMod software: 4.305
-#Tue Jan 21 16:35:13 GMT 2025
+#Tue Jan 21 16:35:35 GMT 2025
 BPnd_(Logan_Ref)_DYN_LOADING_SORTING=NATURAL
 6_DYN_SELECTED_VOL_TIME_1=0.0
 BPnd_(Logan_Ref)_4_DYN_SELECTED_VOL_INC=1
@@ -211,7 +211,7 @@ BPnd_(Logan_Ref)_5_DYNAMIC_NAME=
 BPnd_(Logan_Ref)_6_DYN_VOL_RES_MIN=NO
 BPnd_(Logan_Ref)_2_DYN_VOL_RES_MM=2.0
 BPnd_(Logan_Ref)_3_DYN_VOL_RES_MIN_MM=0.3
-BPnd_(Logan_Ref)_PAR_1_FIT=YES
+BPnd_(Logan_Ref)_PAR_1_FIT=NO
 BPnd_(Logan_Ref)_6_MP_DYNAMIC_TOOL=NO
 BPnd_(Logan_Ref)_MP_TAC_2_TAB_TIME_UNITS=seconds
 BPnd_(Logan_Ref)_4_DYN_SELECTED_VOLUMES=NO
