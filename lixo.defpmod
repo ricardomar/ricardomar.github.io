@@ -1,5 +1,5 @@
 #Version of PMod software: 4.305
-#Tue Jan 21 15:21:07 GMT 2025
+#Tue Jan 21 15:26:17 GMT 2025
 BPnd_(Logan_Ref)_DYN_LOADING_SORTING=NATURAL
 6_DYN_SELECTED_VOL_TIME_1=0.0
 BPnd_(Logan_Ref)_4_DYN_SELECTED_VOL_INC=1
@@ -170,7 +170,7 @@ BPnd_(Logan_Ref)_3_DYN_DATA_SCALE=1.0
 BPnd_(Logan_Ref)_2_DYN_REDUCTION_XYZ=2.0|2.0|2.0
 BPnd_(Logan_Ref)_3_RESLICE_REL_ORIG=NO
 BPnd_(Logan_Ref)_6_DYNAMIC_NAME=
-BPnd_(Logan_Ref)_PREP_PAR_6_FIT=NO
+BPnd_(Logan_Ref)_PREP_PAR_6_FIT=YES
 BPnd_(Logan_Ref)_4_LOADER_CODE=PMdynamicFormatDBase
 BPnd_(Logan_Ref)_5_LOADER_CODE=PMdynamicFormatDBase
 BPnd_(Logan_Ref)_MP_TAC1_DSP_CRV_NAME=Target tissue
@@ -218,7 +218,7 @@ BPnd_(Logan_Ref)_4_DYN_SELECTED_VOLUMES=NO
 BPnd_(Logan_Ref)_6_DYN_PIX_Z_SIZE=1.0
 BPnd_(Logan_Ref)_4_SKIP_DICOM_SCAN=NO
 BPnd_(Logan_Ref)_6_DCM_PAT_ORIENT=0
-BPnd_(Logan_Ref)_PREP_PAR_5_FIT=YES
+BPnd_(Logan_Ref)_PREP_PAR_5_FIT=NO
 BPnd_(Logan_Ref)_DTI_B_VALUE=0.0
 3_DYN_SELECTED_VOL_TIME_1=0.0
 BPnd_(Logan_Ref)_3_ACQ_MODE=NO
