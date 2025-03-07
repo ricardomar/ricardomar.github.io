@@ -44,6 +44,12 @@ https://playerservices.streamtheworld.com/api/livestream-redirect/RFM_JAZZYAAC.a
 #EXTINF:-1, RFM Rock
 https://playerservices.streamtheworld.com/api/livestream-redirect/RFMONTHEROCKAAC.aac
 
+#EXTINF:-1, RFM Dance
+https://playerservices.streamtheworld.com/api/livestream-redirect/DANCEONTHEFLOORAAC.aac
+
+#EXTINF:-1, RFM New Music
+https://playerservices.streamtheworld.com/api/livestream-redirect/RFM_FRESCASAAC.aac
+
 #EXTINF:-1, RFM Oceano Pacífico
 https://playerservices.streamtheworld.com/api/livestream-redirect/OCEANPACIFICAAC.aac
 
