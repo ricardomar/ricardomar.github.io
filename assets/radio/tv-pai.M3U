@@ -1,0 +1,43 @@
+#EXTM3U
+
+#EXTINF:-1, SIC Noticias
+#KODIPROP:inputstream=inputstream.adaptive
+#EXTVLCOPT:http-referrer=https://sic.pt/
+#https://sicnot.live.impresa.pt/sicnot.m3u8
+https://d277k9d1h9dro4.cloudfront.net/out/v1/293e7c3464824cbd8818ab8e49dc5fe9/index.m3u8
+
+
+#EXTINF:-1, CNN Portugal
+#KODIPROP:inputstream=inputstream.adaptive
+https://video-auth7.iol.pt/live_cnn/live_cnn/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9My8xNC8yMDI1IDQ6NzoxNiBQTSZoYXNoX3ZhbHVlPUNYTVZPdHltbmt3akNGMnlKbzNYZ3c9PSZ2YWxpZG1pbnV0ZXM9MTQ0MCZpZD0zYmIzOGI5Yi0xYjRkLTQ2YjUtYjVhMC04NmEyMjhlNDU4NWM=/
+
+
+#EXTINF:-1, V+ TVI
+#KODIPROP:inputstream=inputstream.adaptive
+https://video-auth2.iol.pt/live_vmais/live_vmais/edge_servers/vmais-720p/playlist.m3u8
+
+
+#EXTINF:-1, Porto Canal
+#KODIPROP:inputstream=inputstream.adaptive
+https://pull-live-156-1.global.ssl.fastly.net/pc5865dc25400thmb-ea6bf03b14fa318f7133/pc1-jhrgyuoqe5865db-68tkgb14fa318f7133f03.smil/playlist.m3u8
+
+
+#EXTINF:-1, TVE 24h
+#KODIPROP:inputstream=inputstream.adaptive
+https://rtvelivestream.akamaized.net/rtvesec/24h/24h_main.m3u8
+
+
+#EXTINF:-1, TV Galicia
+#KODIPROP:inputstream=inputstream.adaptive
+https://crtvg-europa.flumotion.cloud/playlist.m3u8
+
+
+#EXTINF:-1, Canal Málaga
+#KODIPROP:inputstream=inputstream.adaptive
+http://canalmalaga-tv-live.flumotion.com/playlist.m3u8
+
+
+
+#EXTINF:-1, Canal Extremadura
+#KODIPROP:inputstream=inputstream.adaptive
+https://cdnapisec.kaltura.com/p/5581662/sp/558166200/playManifest/entryId/1_1u7ssdy3/protocol/https/format/applehttp/flavorIds/1_8xbndriw/a.m3u8
