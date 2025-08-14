@@ -68,7 +68,11 @@ permalink: /publications/
 					<p class="fw-normal m-0 mb-1"><span class="text-muted">{{member.year}} | {{member.publication}}</span></p>
 					<p class="fw-bold m-0 mb-1">{{member.title}}</p>
 					<p class="fst-italic m-0 mb-1">{{member.authors}}</p>
-					<p class="fw-normal m-0 mb-1">[<a target="_blank"  href="{{member.link}}">full-text + mirrors</a>] [<a target="_blank"  href="https://doi.org/{{member.doi}}">{{member.doi}}</a>]</p>
+					  {% if member.link %}
+						<p class="fw-normal m-0 mb-1">
+						  [<a target="_blank" href="{{ member.link }}">full-text</a>] [<a target="_blank" href="https://doi.org/{{ member.doi }}">{{ member.doi }}</a>]
+						</p>
+					  {% endif %}
 				</div>
 				</div>
 				{% endfor %}					
@@ -84,7 +88,11 @@ permalink: /publications/
 					<p class="fw-normal m-0 mb-1"><span class="text-muted">{{member.year}} | {{member.publication}}</span></p>
 					<p class="fw-bold m-0 mb-1">{{member.title}}</p>
 					<p class="fst-italic m-0 mb-1">{{member.authors}}</p>
-					<p class="fw-normal m-0 mb-1">[<a target="_blank"  href="https://doi.org/{{member.doi}}">{{member.doi}}</a>] [<a target="_blank"  href="{{member.link}}">full-text + mirrors</a>]</p>
+					  {% if member.link %}
+						<p class="fw-normal m-0 mb-1">
+						  [<a target="_blank" href="{{ member.link }}">full-text</a>] [<a target="_blank" href="https://doi.org/{{ member.doi }}">{{ member.doi }}</a>]
+						</p>
+					  {% endif %}
 				</div>
 				</div>
 				{% endfor %}				
@@ -100,7 +108,11 @@ permalink: /publications/
 					<p class="fw-normal m-0 mb-1"><span class="text-muted">{{member.year}} | {{member.publication}}</span></p>
 					<p class="fw-bold m-0 mb-1">{{member.title}}</p>
 					<p class="fst-italic m-0 mb-1">{{member.authors}}</p>
-					<p class="fw-normal m-0 mb-1">[<a target="_blank"  href="https://doi.org/{{member.doi}}">{{member.doi}}</a>] [<a target="_blank"  href="{{member.link}}">full-text + mirrors</a>]</p>
+					  {% if member.link %}
+						<p class="fw-normal m-0 mb-1">
+						  [<a target="_blank" href="{{ member.link }}">full-text</a>] [<a target="_blank" href="https://doi.org/{{ member.doi }}">{{ member.doi }}</a>]
+						</p>
+					  {% endif %}
 				</div>
 				</div>
 				{% endfor %}
