@@ -1,9 +1,23 @@
 - name: AIMS-2-TRIALS - Autism Innovative Medicine Studies – 2 – Trials
   research: Cognitive Neuroscience; Biomedical Engineering; Translational neuroscience
-  time: 2018 - 2025
+  time: "2018 - 2026"
   role: Research team member, ICNAS-UC, CIBIT-UC, (Miguel Castelo-Branco's team)
   info: "https://doi.org/10.3030/777394"
   logo: /myFiles/logo_aims2.png
+   
+- name: "CIBIT - FCT Pluriannual Program for the Funding of R&D Units 2025/29 (Base Funding)"
+  research: " "
+  time: "2025 - 2029"
+  role: "Research team member, ICNAS-UC, CIBIT-UC, (Miguel Castelo-Branco's team)"
+  info: "https://sciproj.ptcris.pt/177072UID/"
+  logo: ""  
+ 
+ - name: "CIBIT - FCT Pluriannual Program for the Funding of R&D Units 2025/29 (Lab Equipment Funding)"
+  research: " "
+  time: "2025 - 2026"
+  role: "Research team member, ICNAS-UC, CIBIT-UC, (Miguel Castelo-Branco's team)"
+  info: "https://sciproj.ptcris.pt/177326UID/"
+  logo: ""  
  
 - name: "Longitudinal study of biomarkers of visual cortex plasticity in stroke: fMRI population receptive fields mapping and [11C]UCB-J PET synaptic density assessment"
   research: Cognitive Neuroscience; Biomedical Engineering; Translational neuroscience
