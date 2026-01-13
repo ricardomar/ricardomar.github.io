@@ -4,6 +4,13 @@
   role: "Research team member, ICNAS-UC, CIBIT-UC, (Miguel Castelo-Branco's team)"
   info: "https://doi.org/10.3030/777394"
   logo: "/myFiles/logo_aims2.png"
+
+- name: "Longitudinal study of biomarkers of visual cortex plasticity in stroke: fMRI population receptive fields mapping and [11C]UCB-J PET synaptic density assessment"
+  research: "Cognitive Neuroscience; Biomedical Engineering; Translational neuroscience"
+  time: "2023 - 2027"
+  role: "Co-supervisor, PhD in Biomedical Engineering, ICNAS-UC, CIBIT-UC, (Supervisor: Miguel Castelo-Branco)"
+  info: "https://sciproj.ptcris.pt/99788DFA/"
+  logo: "#"
    
 - name: "CIBIT - FCT Pluriannual Program for the Funding of R&D Units 2025/29 (Base Funding)"
   research: "#"
@@ -17,14 +24,7 @@
   time: "2025 - 2026"
   role: "Research team member, ICNAS-UC, CIBIT-UC, (Miguel Castelo-Branco's team)"
   info: "https://sciproj.ptcris.pt/177326UID/"
-  logo: ""  
- 
-- name: "Longitudinal study of biomarkers of visual cortex plasticity in stroke: fMRI population receptive fields mapping and [11C]UCB-J PET synaptic density assessment"
-  research: "Cognitive Neuroscience; Biomedical Engineering; Translational neuroscience"
-  time: "2023 - 2027"
-  role: "Co-supervisor, PhD in Biomedical Engineering, ICNAS-UC, CIBIT-UC, (Supervisor: Miguel Castelo-Branco)"
-  info: "https://sciproj.ptcris.pt/99788DFA/"
-  logo: "#"
+  logo: "" 
    
 - name: "iNaturalist - Portugal (biodiversity4all)"
   research: "citizen science"
