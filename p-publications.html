@@ -69,6 +69,7 @@ permalink: /publications/
 					<p class="fw-bold m-0 mb-1">{{member.title}}</p>
 					<p class="fst-italic m-0 mb-1">{{member.authors}}</p>
 					  {% if member.link %}
+					  
 						<p class="fw-normal m-0 mb-1">
 						  [<a target="_blank" href="{{ member.link }}">Full-Text</a>] [<a target="_blank" href="https://doi.org/{{ member.doi }}">{{ member.doi }}</a>] [<a target="_blank" href="{{ member.bib }}">BibTeX</a>]
 						</p>
@@ -84,7 +85,7 @@ permalink: /publications/
 							  "name": {{ member.publication | jsonify }}
 							},
 							"identifier": {{ member.doi | jsonify }},
-							"url": "https://doi.org/{{ member.doi | jsonify }}",
+							"url": "https://doi.org/"{{ member.doi | jsonify }},
 							"author": [
 								{% assign author_array = member.authors | split: ", " %}
 							    {% for author_name in author_array %}
@@ -96,9 +97,7 @@ permalink: /publications/
 							]
 						  }
 						</script>
-						
-						
-						
+
 					  {% endif %}
 				</div>
 				</div>
