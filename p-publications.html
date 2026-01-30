@@ -72,6 +72,35 @@ permalink: /publications/
 						<p class="fw-normal m-0 mb-1">
 						  [<a target="_blank" href="{{ member.link }}">Full-Text</a>] [<a target="_blank" href="https://doi.org/{{ member.doi }}">{{ member.doi }}</a>] [<a target="_blank" href="{{ member.bib }}">BibTeX</a>]
 						</p>
+						
+				
+						<script type="application/ld+json">
+						  {
+							"@context": "https://schema.org",
+							"@type": "ScholarlyArticle",
+							"headline": {{ member.title | jsonify }},
+							"name": {{ member.title | jsonify }},
+							"datePublished": {{ member.year | jsonify }},
+							"isPartOf": {
+							  "@type": "Periodical",
+							  "name": {{ member.publication | jsonify }}
+							},
+							"identifier": {{ member.doi | jsonify }},
+							"url": {{ member.doi | jsonify }},
+							"author": [
+								{% assign author_array = member.authors | split: ", " %}
+							    {% for author_name in author_array %}
+									{
+									"@type": "Person",
+									"name": {{ author_name | strip | jsonify }}
+									}{% unless forloop.last %},{% endunless %}
+								{% endfor %}
+							]
+						  }
+						</script>
+						
+						
+						
 					  {% endif %}
 				</div>
 				</div>
