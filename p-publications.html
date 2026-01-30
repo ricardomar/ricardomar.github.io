@@ -85,7 +85,7 @@ permalink: /publications/
 							  "name": {{ member.publication | jsonify }}
 							},
 							"identifier": {{ member.doi | jsonify }},
-							"url": "https://doi.org/"{{ member.doi | jsonify }},
+							"url": "https://doi.org/{{ member.doi | strip }}",
 							"author": [
 								{% assign author_array = member.authors | split: ", " %}
 							    {% for author_name in author_array %}
