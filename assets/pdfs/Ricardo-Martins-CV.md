@@ -24,5 +24,6 @@ Reviewer Awards 2024: "Machine Learning: Science and Technology" journal), and h
 ## Website
  - https://ricardomar.github.io/
 
+## Education
 
 
