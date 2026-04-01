@@ -1,7 +1,6 @@
 # Ricardo Martins
 
 ## Summary
-
 Ricardo Martins (RM) is a quantitative neuroimaging research technician at the Coimbra Institute for Biomedical Imaging and Translational Research (CIBIT), University of Coimbra (UC), working at the intersection of engineering, neuroimaging, and cognitive neuroscience. Trained as a biomedical engineer (2008), he holds a PhD in electrical and computer engineering (2017) focused on multimodal signal processing and computational models of artificial perception in autonomous robots, expertise he has extended and applies to the computational study of the human brain.
 
 RM investigates behaviour, brain structure, and function using multimodal neuroimaging techniques (sMRI: morphometry and volumetry; fMRI: task-based brain activations and functional connectivity; PET: kinetic modelling and quantification) in healthy populations and clinical cohorts spanning neurology (Parkinsonian
@@ -13,10 +12,10 @@ clinical research awards: the Janssen Neuroscience RWE Award 2019 (Clinical Seri
 Reviewer Awards 2024: "Machine Learning: Science and Technology" journal), and he shares open-code and data from his research projects at https://ricardomar.github.io/ .
 
 ## Author identifiers
- - **Ciência ID:** 7F17-8F87-7BB8
- - **ORCID ID:** 0000-0001-7184-185X
- - **Google Scholar ID:** kJOYYusAAAAJ
- - **Researcher ID:** C-4965-2009
+- **Ciência ID:** 7F17-8F87-7BB8
+- **ORCID ID:** 0000-0001-7184-185X
+- **Google Scholar ID:** kJOYYusAAAAJ
+- **Researcher ID:** C-4965-2009
 - **Scopus Author ID:** 57194264015
 
 ## Email addresses
