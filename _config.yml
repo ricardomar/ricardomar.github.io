@@ -12,3 +12,7 @@ permalink: pretty
 exclude:
   - LICENSE
   - README.md
+  - vendor/
+  - .github/
+  - Gemfile
+  - Gemfile.lock
