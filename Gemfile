@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
 
-gem "jekyll", "~> 4.3"
+# Downgraded to 3.10 to satisfy the github-pages gem requirement
+gem "jekyll", "~> 3.10"
 gem "jekyll-nagymaros", "~> 3.4.0"
 
-# Grouping plugins here means Jekyll loads them automatically
 group :jekyll_plugins do
   gem "jekyll-seo-tag", "~> 2.8"
   gem "jekyll-sitemap", "~> 1.4"
