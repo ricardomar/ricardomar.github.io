@@ -53,6 +53,12 @@ https://playerservices.streamtheworld.com/api/livestream-redirect/RFM_FRESCASAAC
 #EXTINF:-1, RFM Oceano Pacífico
 https://playerservices.streamtheworld.com/api/livestream-redirect/OCEANPACIFICAAC.aac
 
+#EXTINF:-1, Renascença
+https://28503.live.streamtheworld.com/RADIO_RENASCENCAAAC.aac
+
+#EXTINF:-1, Renascença Non-Stop
+https://27823.live.streamtheworld.com/RR_NONSTOPAAC.aac
+
 #EXTINF:-1, TSF Jazz Suica
 http://statslive.infomaniak.ch/playlist/tsfjazz/tsfjazz-high.mp3/playlist.asx
 
