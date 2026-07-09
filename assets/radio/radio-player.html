@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M3U Web Radio Player</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        /* Mobile Menu Toggle Button */
+        #menu-toggle {
+            display: none;
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            z-index: 100;
+            background-color: #1db954;
+            color: black;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        /* Sidebar styling */
+        #sidebar {
+            width: 340px;
+            background-color: #1e1e1e;
+            border-right: 1px solid #2d2d2d;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s ease;
+            z-index: 90;
+        }
+        #search-box {
+            padding: 15px;
+            background-color: #181818;
+        }
+        #search {
+            width: 100%;
+            padding: 12px;
+            border-radius: 5px;
+            border: 1px solid #333;
+            background-color: #252525;
+            color: white;
+            font-size: 16px; /* 16px prevents iOS zoom on focus */
+        }
+        #search:focus {
+            outline: 1px solid #1db954;
+        }
+        #playlist {
+            list-style: none;
+            overflow-y: auto;
+            flex-grow: 1;
+            -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+        }
+        #playlist li {
+            padding: 15px;
+            cursor: pointer;
+            border-bottom: 1px solid #252525;
+            font-size: 15px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            transition: background 0.2s;
+        }
+        #playlist li:hover {
+            background-color: #2a2a2a;
+        }
+        #playlist li.active {
+            background-color: #1db954;
+            color: #000;
+            font-weight: bold;
+        }
+
+        /* Main Player Container */
+        #player-container {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(180deg, #181818 0%, #0a0a0a 100%);
+            padding: 20px;
+            text-align: center;
+        }
+        #radio-art {
+            width: 220px;
+            height: 220px;
+            max-width: 50vw;
+            max-height: 50vw;
+            background-color: #282828;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 64px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        #channel-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            padding: 0 10px;
+        }
+        #status {
+            font-size: 14px;
+            color: #b3b3b3;
+            margin-bottom: 30px;
+            height: 20px;
+        }
+        audio {
+            width: 100%;
+            max-width: 400px;
+        }
+
+        /* Responsive Layout Breaks */
+        @media (max-width: 768px) {
+            #menu-toggle {
+                display: block; /* Show menu button on mobile */
+            }
+            #sidebar {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 280px;
+                transform: translateX(-100%); /* Hide sidebar offscreen by default */
+            }
+            #sidebar.open {
+                transform: translateX(0); /* Slide into view */
+                box-shadow: 5px 0 25px rgba(0,0,0,0.8);
+            }
+            #player-container {
+                padding-top: 80px; /* Leave space for mobile top button */
+            }
+            #channel-title {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <button id="menu-toggle" onclick="toggleSidebar()">☰ Stations</button>
+
+    <div id="sidebar">
+        <div id="search-box">
+            <div style="height: 45px;" id="spacer"></div>
+            <input type="text" id="search" placeholder="Search stations...">
+        </div>
+        <ul id="playlist"></ul>
+    </div>
+
+    <div id="player-container">
+        <div id="radio-art">📻</div>
+        <div id="channel-title">Loading Playlist...</div>
+        <div id="status">Fetching streams...</div>
+        <audio id="audio-player" controls></audio>
+    </div>
+
+    <script>
+        // Remote M3U Playlist URL provided by you
+        const m3uPlaylistUrl = "https://ricardomar.github.io/assets/radio/radio.m3u";
+
+        const audio = document.getElementById('audio-player');
+        const playlistElement = document.getElementById('playlist');
+        const searchInput = document.getElementById('search');
+        const channelTitle = document.getElementById('channel-title');
+        const statusElement = document.getElementById('status');
+        const sidebar = document.getElementById('sidebar');
+        const menuToggle = document.getElementById('menu-toggle');
+        
+        let stations = [];
+
+        // Toggle Sidebar visibility on mobile
+        function toggleSidebar() {
+            sidebar.classList.toggle('open');
+            if(sidebar.classList.contains('open')) {
+                menuToggle.innerText = "✕ Close";
+            } else {
+                menuToggle.innerText = "☰ Stations";
+            }
+        }
+
+        // Fetch the external M3U file asynchronously
+        async function fetchM3UPlaylist() {
+            try {
+                const response = await fetch(m3uPlaylistUrl);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+                const data = await response.text();
+                
+                channelTitle.innerText = "Select a Station";
+                statusElement.innerText = "Ready";
+                parseM3U(data);
+            } catch (error) {
+                channelTitle.innerText = "Error Loading Playlist";
+                statusElement.innerText = "Could not fetch the remote M3U data.";
+                console.error("Failed to load M3U file:", error);
+            }
+        }
+
+        // Parse M3U text data
+        function parseM3U(data) {
+            const lines = data.split('\n');
+            let currentStation = null;
+
+            for (let i = 0; i < lines.length; i++) {
+                let line = lines[i].trim();
+                if (line.startsWith('#EXTINF:')) {
+                    const commaIndex = line.lastIndexOf(',');
+                    let name = line.substring(commaIndex + 1).trim();
+                    currentStation = { name: name };
+                } else if (line && !line.startsWith('#')) {
+                    if (currentStation) {
+                        // Automatically upgrade http to https to prevent browser mixed content blocks
+                        let streamUrl = line;
+                        if (streamUrl.startsWith('http://')) {
+                            streamUrl = streamUrl.replace('http://', 'https://');
+                        }
+                        currentStation.url = streamUrl;
+                        stations.push(currentStation);
+                        currentStation = null;
+                    }
+                }
+            }
+            renderPlaylist(stations);
+        }
+
+        function renderPlaylist(items) {
+            playlistElement.innerHTML = '';
+            items.forEach((station) => {
+                const li = document.createElement('li');
+                li.innerText = station.name;
+                li.addEventListener('click', () => playRadio(station, li));
+                playlistElement.appendChild(li);
+            });
+        }
+
+        function playRadio(station, element) {
+            const activeItem = document.querySelector('#playlist li.active');
+            if (activeItem) activeItem.classList.remove('active');
+            element.classList.add('active');
+
+            channelTitle.innerText = station.name;
+            statusElement.innerText = "Connecting...";
+
+            audio.src = station.url;
+            audio.play()
+                .then(() => { statusElement.innerText = "Playing Live Stream"; })
+                .catch(err => { 
+                    statusElement.innerText = "Error loading stream. It might be offline or blocked by CORS.";
+                    console.error(err);
+                });
+
+            // Automatically close sidebar menu on mobile after choosing a station
+            if (window.innerWidth <= 768) {
+                toggleSidebar();
+            }
+        }
+
+        // Audio tag event handlers for dynamic user feedback
+        audio.addEventListener('waiting', () => statusElement.innerText = "Buffering...");
+        audio.addEventListener('playing', () => statusElement.innerText = "Playing Live Stream");
+
+        // Filter / Search Bar Functionality
+        searchInput.addEventListener('input', (e) => {
+            const query = e.target.value.toLowerCase();
+            const filtered = stations.filter(s => s.name.toLowerCase().includes(query));
+            renderPlaylist(filtered);
+        });
+
+        // Responsive layout configuration checks
+        function checkResponsiveLayout() {
+            const spacer = document.getElementById('spacer');
+            if (window.innerWidth <= 768) {
+                spacer.style.display = 'block';
+            } else {
+                spacer.style.display = 'none';
+                sidebar.classList.remove('open');
+                menuToggle.innerText = "☰ Stations";
+            }
+        }
+
+        window.addEventListener('resize', checkResponsiveLayout);
+        
+        // Execute Initialization on page load
+        fetchM3UPlaylist();
+        checkResponsiveLayout();
+    </script>
+</body>
+</html>
